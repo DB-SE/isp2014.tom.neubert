@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+	<featureModel chosenLayoutAlgorithm="1">
+		<struct>
+			<and abstract="true" mandatory="true" name="MultiFuncRechner">
+				<description>
+					MultiFuncRechner: 
+					
+					- soll ein Multifunktionsrechner werden der Rechner beinhaltet welche man im Alltag häufig benötigt
+					
+				</description>
+				<and mandatory="true" name="Features">
+					<alt mandatory="true" name="Taschenrechner">
+						<description>
+							normaler Taschenrechner, welcher in 2 Versionen zur verfügung stehen soll
+							
+							
+						</description>
+						<feature mandatory="true" name="Standart">
+							<description>
+								Version 1: Nur die Standartrechenoperationen
+							</description>
+						</feature>
+						<feature mandatory="true" name="Advanced">
+							<description>
+								Version 2: Standart + Erweiterte Rechenoperationen
+								
+							</description>
+						</feature>
+					</alt>
+					<alt mandatory="true" name="Benzinrechner">
+						<description>
+							Ein Sprittgeldrechner welcher zum Ausrechnen von Fahrtkosten dienen soll
+							
+							die 2 Versionen sind wohl selbsterklärend, wie der Rechner wohl auch ;)
+						</description>
+						<feature mandatory="true" name="mit_Fahrzeugverschleiß"/>
+						<feature mandatory="true" name="ohne_Fahrzeugverschleiß"/>
+					</alt>
+					<feature mandatory="true" name="Bußgeldrechner"/>
+					<alt mandatory="true" name="Nettolohnrechner">
+						<description>
+							Auch Selbsterklärend
+						</description>
+						<feature mandatory="true" name="Einfach">
+							<description>
+								Erfordert nur wenige Eingaben des Users und wenig Hintergrundwissen
+							</description>
+						</feature>
+						<feature mandatory="true" name="Komplex">
+							<description>
+								Bietet mehr Einstellungsmöglichkeiten und erfordert mehr Wissen des Users
+							</description>
+						</feature>
+					</alt>
+					<feature mandatory="true" name="Stromverbrauchrechner">
+						<description>
+							ein weiterer sinnvoller Alltagsrechner
+						</description>
+					</feature>
+					<feature abstract="true" name="Matrizenrechner">
+						<description>
+							Rechner für Operationen mit Matrizen, falls alle Features zu implementieren sind, lass ich den dieses dann doch lieber weg
+						</description>
+					</feature>
+					<feature name="Stoppuhr">
+						<description>
+							Misst die zeit zwischen 2 Tastatureingaben
+						</description>
+					</feature>
+					<feature name="Timer">
+						<description>
+							Lässt Timer ablaufen und gibt Feedback wenn zeit abgelaufen. 
+						</description>
+					</feature>
+					<and name="Quiz">
+						<description>
+							Falls der User mal keine Lust mehr aufs Rechnen hat, kann er hier
+							ein paar raffinierte Fragen beantworten zu verschiedenen Themengebieten
+							... alle optional
+						</description>
+						<feature name="Mathequiz"/>
+						<feature name="Allgemeinwissen"/>
+						<feature name="Fussballquiz"/>
+						<feature name="Videospielquiz"/>
+						<feature name="Historyquiz"/>
+						<feature name="Witzig"/>
+					</and>
+				</and>
+			</and>
+		</struct>
+		<constraints/>
+		<calculations Auto="true" Constraints="true" Features="true" Redundant="true" Tautology="true"/>
+		<comments/>
+		<featureOrder userDefined="false"/>
+	</featureModel>
