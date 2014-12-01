@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+	<featureModel chosenLayoutAlgorithm="1">
+		<struct>
+			<and abstract="true" mandatory="true" name="MultiFuncRechner">
+				<description>
+					MultiFuncRechner: 
+					
+					- soll ein Multifunktionsrechner werden der Rechner beinhaltet welche man im Alltag häufig benötigt
+				</description>
+				<and abstract="true" mandatory="true" name="Features">
+					<alt name="Taschenrechner">
+						<description>
+							normaler Taschenrechner, welcher in 2 Versionen zur verfügung stehen soll
+						</description>
+						<feature abstract="true" mandatory="true" name="Standart"/>
+						<feature abstract="true" mandatory="true" name="Advanced"/>
+					</alt>
+					<alt name="Benzinrechner">
+						<description>
+							Ein Sprittgeldrechner welcher zum Ausrechnen von Fahrtkosten dienen soll
+							
+							die 2 Versionen sind wohl selbsterklärend, wie der Rechner wohl auch ;)
+						</description>
+						<feature abstract="true" mandatory="true" name="mit_Fahrzeugverschleiss"/>
+						<feature abstract="true" mandatory="true" name="ohne_Fahrzeugverschleiss"/>
+					</alt>
+					<feature name="Bussgeldrechner"/>
+					<alt name="Nettolohnrechner">
+						<description>
+							Auch Selbsterklärend
+						</description>
+						<feature abstract="true" mandatory="true" name="einfach"/>
+						<feature abstract="true" mandatory="true" name="komplex"/>
+					</alt>
+					<feature name="BMI">
+						<description>
+							ein weiterer sinnvoller Alltagsrechner
+						</description>
+					</feature>
+					<feature name="Stromrechner">
+						<description>
+							Rechner für Operationen mit Matrizen, falls alle Features zu implementieren sind, lass ich den dieses dann doch lieber weg
+						</description>
+					</feature>
+					<feature name="Stoppuhr">
+						<description>
+							Misst die zeit zwischen 2 Tastatureingaben
+						</description>
+					</feature>
+					<feature name="Timer">
+						<description>
+							Lässt Timer ablaufen und gibt Feedback wenn zeit abgelaufen.
+						</description>
+					</feature>
+					<and name="Quiz">
+						<description>
+							Falls der User mal keine Lust mehr aufs Rechnen hat, kann er hier
+							ein paar raffinierte Fragen beantworten zu verschiedenen Themengebieten
+							... alle optional
+						</description>
+						<feature abstract="true" name="Mathe"/>
+						<feature abstract="true" name="Allgemeinwissen"/>
+						<feature abstract="true" name="BVB"/>
+						<feature abstract="true" name="Videospielquiz"/>
+						<feature abstract="true" name="History"/>
+						<feature abstract="true" name="Witzig"/>
+					</and>
+				</and>
+			</and>
+		</struct>
+		<constraints/>
+		<calculations Auto="true" Constraints="true" Features="true" Redundant="true" Tautology="true"/>
+		<comments/>
+		<featureOrder userDefined="false"/>
+	</featureModel>
