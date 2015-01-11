@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+	<featureModel chosenLayoutAlgorithm="1">
+		<struct>
+			<and abstract="true" mandatory="true" name="MultiFuncApp_FOP">
+				<and mandatory="true" name="Main">
+					<feature mandatory="true" name="Taschenrechner"/>
+					<feature name="Benzinrechner"/>
+					<feature name="Bussgeldrechner"/>
+					<feature name="Nettolohnrechner"/>
+					<feature name="BMI"/>
+					<feature name="Timer"/>
+					<feature name="Stromrechner"/>
+					<feature name="Stoppuhr"/>
+					<feature name="Quiz"/>
+				</and>
+			</and>
+		</struct>
+		<constraints/>
+		<calculations Auto="true" Constraints="true" Features="true" Redundant="true" Tautology="true"/>
+		<comments/>
+		<featureOrder userDefined="false"/>
+	</featureModel>

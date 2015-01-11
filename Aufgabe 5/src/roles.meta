@@ -1,0 +1,56 @@
+{
+	"features" : [
+		"Main",
+		"Taschenrechner",
+		"Benzinrechner",
+		"Bussgeldrechner",
+		"Nettolohnrechner",
+		"BMI",
+		"Timer",
+		"Stromrechner",
+		"Stoppuhr",
+		"Quiz"
+	],
+	"roles": {
+		"main": {
+			"Main": "main__wrappee__Main",
+			"Taschenrechner": "main__wrappee__Taschenrechner",
+			"Benzinrechner": "main__wrappee__Benzinrechner",
+			"Bussgeldrechner": "main__wrappee__Bussgeldrechner",
+			"BMI": "main__wrappee__BMI",
+			"Stoppuhr": "main__wrappee__Stoppuhr",
+			"Timer": "main__wrappee__Timer",
+			"Quiz": "main",
+			"Nettolohnrechner": "main__wrappee__Nettolohnrechner",
+			"Stromrechner": "main__wrappee__Stromrechner"
+		},
+		"startFeature": {
+			"Main": "startFeature__wrappee__Main",
+			"Taschenrechner": "startFeature__wrappee__Taschenrechner",
+			"Benzinrechner": "startFeature__wrappee__Benzinrechner",
+			"Bussgeldrechner": "startFeature__wrappee__Bussgeldrechner",
+			"BMI": "startFeature__wrappee__BMI",
+			"Stoppuhr": "startFeature__wrappee__Stoppuhr",
+			"Timer": "startFeature__wrappee__Timer",
+			"Quiz": "startFeature",
+			"Nettolohnrechner": "startFeature__wrappee__Nettolohnrechner",
+			"Stromrechner": "startFeature__wrappee__Stromrechner"
+		},
+		"standartrechner": {
+			"Taschenrechner": "standartrechner"
+		},
+		"advancedrechner": {
+			"Taschenrechner": "advancedrechner"
+		},
+		"rechner": {
+			"Benzinrechner": "rechner"
+		},
+		"BodyMass": {
+			"BMI": "BodyMass"
+		},
+		"stoppuhr": {
+			"Stoppuhr": "stoppuhr"
+		}
+	}
+
+}
